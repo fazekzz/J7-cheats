@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J7 Cheats</title>
+    <!-- Definindo o favicon para a aba do navegador -->
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/f/f6/Images-removebg-previewxrc.png" type="image/png">
+    
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Impede o scroll da tela */
+            height: 100vh;
+            position: relative;
+            background-color: #000; /* Fundo da página preto */
+            color: black; /* Cor do texto */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Fundo Preto com Opacidade (Agora com 70% de opacidade) */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Preto com 70% de opacidade */
+            z-index: -1; /* Coloca o fundo atrás do conteúdo */
+        }
+
+        /* Estilo do card com fundo do GIF */
+        .card {
+            background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3luc3oxMm0yNmU3MWFiZzI1NW12OTc3OTR1N2lrcTQ0MnVnZGtkNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/crwwGNqIMccLXpD10F/giphy.webp');
+            background-size: cover; /* Faz o fundo cobrir toda a área do card */
+            background-position: center; /* Centraliza o fundo */
+            border-radius: 10px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 15px 25px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+            width: 500px; /* Largura do card */
+            height: 300px; /* Altura do card */
+            padding: 30px;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 2;
+            backdrop-filter: blur(100px); /* Desfoque de 100% */
+            -webkit-backdrop-filter: blur(100px); /* Para compatibilidade com Safari */
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .card-header img {
+            border-radius: 50%;
+            width: 80px; /* Tamanho da foto */
+            height: 80px; /* Tamanho da foto */
+            margin-right: 20px;
+        }
+
+        .card-header .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .card h2 {
+            margin: 0;
+            font-size: 28px;
+            color: #fff; /* Texto branco */
+            text-align: left;
+            text-shadow: 0 0 10px rgba(128, 0, 128, 0.8),   /* Brilho roxo */
+                         0 0 20px rgba(128, 0, 128, 0.6),   /* Brilho mais forte */
+                         0 0 30px rgba(128, 0, 128, 0.4);   /* Brilho ainda mais forte */
+        }
+
+        /* Estilo dos ícones das redes sociais */
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px; /* Espaço reduzido entre os ícones */
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            width: 25px; /* Tamanho fixo dos ícones reduzido */
+            height: 25px; /* Tamanho fixo dos ícones reduzido */
+        }
+
+        .social-icons a img {
+            width: 100%; /* Ajusta a imagem para preencher o espaço */
+            height: 100%; /* Ajusta a altura da imagem */
+        }
+
+        /* Efeito de animação nos ícones das redes sociais */
+        .social-icons a:hover {
+            transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Media Queries para Responsividade */
+        @media (max-width: 768px) {
+            .card {
+                width: 90%; /* Card ocupa 90% da largura para telas menores */
+                height: auto;
+                padding: 20px;
+            }
+
+            .card-header img {
+                width: 70px; /* Reduz o tamanho da foto */
+                height: 70px; /* Reduz o tamanho da foto */
+                margin-right: 15px; /* Diminui o espaço à direita da foto */
+            }
+
+            .card h2 {
+                font-size: 24px; /* Diminui o tamanho da fonte do nome */
+            }
+
+            .social-icons a {
+                width: 20px; /* Ícones menores */
+                height: 20px; /* Ícones menores */
+            }
+        }
+
+        /* Responsividade para telas pequenas como celulares */
+        @media (max-width: 480px) {
+            .card {
+                width: 100%; /* Card ocupa toda a largura da tela */
+                padding: 15px;
+            }
+
+            .card-header img {
+                width: 60px; /* Tamanho ainda menor da foto */
+                height: 60px;
+                margin-right: 10px; /* Menos espaço ao lado da foto */
+            }
+
+            .card h2 {
+                font-size: 20px; /* Fonte do nome menor */
+            }
+
+            .social-icons a {
+                width: 20px; /* Ícones menores */
+                height: 20px; /* Ícones menores */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Fundo da Página Preto com Opacidade -->
+    <div class="background"></div>
+
+    <!-- Card Centralizado com Fundo do GIF -->
+    <div class="card">
+        <div class="card-header">
+            <!-- Imagem de Perfil -->
+            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWJpNnA5aDBhd3l3aHBhdDh5dnN3eXk0dzZ1NzVzNnVvNmo0NTlpOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lThKfcAEVwCQp3PO00/giphy.gif" alt="Foto de Perfil">
+            <div class="info">
+                <!-- Nome da Pessoa com Brilho Roxo -->
+                <h2>J7 Cheats</h2>
+            </div>
+        </div>
+
+        <!-- Ícones das redes sociais -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/j7_cheatsofc/profilecard/?igsh=MW9kMmIzZnVsYnJ5MQ==" class="instagram" target="_blank" title="Instagram">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://discord.gg/PnnFbMyhXv" class="discord" target="_blank" title="Discord">
+                <!-- Ícone do Discord com o link que você forneceu -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Icons8-discord-48.png?20241228215350" alt="Discord">
+            </a>
+            <a href="https://www.tiktok.com/@fazekzz_xiters?_t=8sbUbphPSv0&_r=1" class="tiktok" target="_blank" title="TikTok">
+                <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+            </a>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 J7 Cheats. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
